@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+  </head>
+  <body ng-app="MovieApp">
+    <div class="header">
+      <div class="container">
+        <img src="http://findicons.com/files/icons/1261/sticker_system/128/movie.png" width="50">
+        <h1 class="titletext" >Now Playing in Theaters</h1>
+      </div>
+    </div>
+    <div class="seperator"></div>
+    <div ng-view></div>
+
+
+    
+
+    
+    <script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/movies.js"></script>
+    <script src="js/controllers/MovieViewController.js"></script>
+    <script src="js/controllers/MovieController.js"></script>
+  </body>
+</html>

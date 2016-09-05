@@ -1,0 +1,23 @@
+<a class="button back" href="#/movies">Back</a>
+<div class="movie-detail">
+  <img ng-src="{{ posterUrl}}">
+  <h3 class="title"> {{ movie.title }} </h3>
+  <p class="author"> Release Date: {{ movie.release_date }}  </p>
+  <p class="author"> Rating: {{ movie.vote_average }}/10 based on {{movie.vote_count}} user reviews.  </p>
+  <p class="description">Description: {{ movie.overview }} </p>
+
+  <h3 class="title"> Critic Reviews </h3>
+  <div ng-repeat="review in reviews">
+    
+      
+      <p>{{review.author}}: {{review.content}}  </p>
+
+    
+  </div>
+</div>
+<div class="footer">
+      <div class="container">
+        
+        <h1 class="titletext" >  Made by Andrei Gurau</h1>
+      </div>
+    </div>

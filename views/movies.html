@@ -1,0 +1,18 @@
+<div class="movie row">
+  
+  <div class="movie" ng-repeat="movie in myMovies">
+    <a href="#/movies/{{$index}}">
+    	
+      <img ng-src="{{posterPath[$index]}}">
+      <h3 class="title">{{movie.title}}  </h3>
+      <p class="author">{{movie.overview}}  </p>
+    </a>
+  </div>
+<div class="footer">
+      <div class="container">
+        
+        <h1 class="titletext" >  Made by Andrei Gurau</h1>
+      </div>
+    </div>
+
+</div>
